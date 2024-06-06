@@ -14,7 +14,6 @@ import { useToast } from './ui/use-toast'
 import { Skeleton } from './ui/skeleton'
 
 const RecordingCard = ({meeting}: {meeting: CallRecording}) => {
-  const meetingLink = `http://${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meeting.id}`
   const {toast} = useToast()
 
   
