@@ -19,7 +19,7 @@ const Table = ({title, description}: {title: string, description: string})=>{
 const PrivatePage = () => {
   const {user} = useUser()
   const meetingId = user?.id
-  const meetingLink = `http://${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meetingId}/?private=true`
+  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meetingId}/?private=true`
   const {toast} = useToast()
 
   const {call} = useGetCallById(meetingId as string)
