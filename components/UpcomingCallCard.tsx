@@ -14,7 +14,7 @@ import { useToast } from './ui/use-toast'
 import { Skeleton } from './ui/skeleton'
 
 const UpcomingCallCard = ({meeting}: {meeting: Call}) => {
-  const meetingLink = `http://${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meeting.id}`
+  const meetingLink = `https://${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meeting.id}`
   const {toast} = useToast()
 
   
